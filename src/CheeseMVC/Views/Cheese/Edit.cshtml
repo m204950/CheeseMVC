@@ -1,0 +1,16 @@
+﻿<h1>Edit Cheese @ViewBag.editCheese.Name (id=@ViewBag.editCheese.CheeseId)</h1>
+
+<form method="post">
+
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input class="form-control" name="name" id="name" type="text" value="@ViewBag.editCheese.Name" />
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <input class="form-control" name="description" id="description" type="text" value="@ViewBag.editCheese.Description" />
+    </div>
+    <input type="hidden" value="@ViewBag.editCheese.CheeseId" name="id" />
+    <input type="submit" value="Edit Cheese" />
+
+</form>
